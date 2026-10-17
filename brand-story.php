@@ -1,0 +1,11 @@
+<?php
+/**
+ * Title: The story behind the loop
+ * Slug: loopkind/brand-story
+ * Categories: loopkind, text
+ * Description: An editorial brand-story section for explaining a refill or reuse mission.
+ */
+$content = <<<'BLOCKS'
+<!-- wp:group {"align":"full","style":{"color":{"background":"#f1eadc"},"spacing":{"padding":{"top":"76px","bottom":"76px"}}},"layout":{"type":"constrained"}} --><div class="wp-block-group alignfull has-background" style="background-color:#f1eadc;padding-top:76px;padding-bottom:76px"><!-- wp:columns {"align":"wide","verticalAlignment":"center"} --><div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"width":"39%"} --><div class="wp-block-column" style="flex-basis:39%"><!-- wp:paragraph {"className":"lk-eyebrow"} --><p class="lk-eyebrow">Why we began</p><!-- /wp:paragraph --><!-- wp:heading {"className":"lk-display","style":{"typography":{"fontSize":"clamp(2.6rem,5vw,4.8rem)"}} } --><h2 class="wp-block-heading lk-display" style="font-size:clamp(2.6rem,5vw,4.8rem)">A little more care, built into the everyday.</h2><!-- /wp:heading --></div><!-- /wp:column --><!-- wp:column {"width":"61%"} --><div class="wp-block-column" style="flex-basis:61%"><!-- wp:paragraph {"style":{"typography":{"fontSize":"1.15rem"}} } --><p style="font-size:1.15rem">Loopkind is designed for shops that make returning, refilling and reusing feel simple. Thoughtful products, clear instructions and a dependable return process can make a small habit part of everyday life.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>A thoughtful storefront helps customers understand what makes your approach different. Keep the language specific, honest and grounded in what you can deliver.</p><!-- /wp:paragraph --><!-- wp:quote --><blockquote class="wp-block-quote"><p>Good design makes the better choice feel easy.</p></blockquote><!-- /wp:quote --></div><!-- /wp:column --></div><!-- /wp:columns --></div><!-- /wp:group -->
+BLOCKS;
+register_block_pattern( 'loopkind/brand-story', array( 'title' => __( 'The story behind the loop', 'loopkind' ), 'description' => __( 'An editorial brand-story section for a refill and reuse shop.', 'loopkind' ), 'categories' => array( 'loopkind', 'text' ), 'content' => $content ) );
