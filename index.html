@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Static visual preview of Loopkind, an editorial WordPress theme for refill and reuse shops.">
+	<meta name="theme-color" content="#17392e">
+	<title>Loopkind — Theme Preview</title>
+	<style>
+		:root{color-scheme:dark;--forest:#17392e;--forest-2:#214637;--sage:#dce8d7;--paper:#f8f7f1;--line:rgba(255,255,255,.12);--muted:#b8c6bc}
+		*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,#2a5140 0,#17392e 48%,#102a22 100%);color:#fff;font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+		button,a{font:inherit}a{color:inherit}.wrap{width:min(1440px,calc(100% - 32px));margin:0 auto;padding:42px 0 48px}.intro{display:flex;align-items:end;justify-content:space-between;gap:24px;margin:0 auto 24px;max-width:1320px}.kicker{margin:0 0 8px;color:#d5ee78;font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.intro h1{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:500;letter-spacing:-.05em;line-height:1}.intro p{max-width:550px;margin:10px 0 0;color:#d3ded4}.intro__links{display:flex;flex-wrap:wrap;gap:10px}.intro__links a{display:inline-flex;align-items:center;gap:8px;padding:10px 15px;border:1px solid var(--line);border-radius:999px;text-decoration:none}.intro__links a:hover{color:var(--forest);background:#d5ee78;border-color:#d5ee78}
+		.browser{max-width:1320px;margin:auto;overflow:hidden;border:1px solid rgba(255,255,255,.16);border-radius:18px;background:#f4f3ee;box-shadow:0 32px 90px rgba(0,0,0,.38)}.browser__tabs{display:flex;align-items:center;gap:5px;min-height:52px;padding:7px 12px 0;background:#e8e9e6;color:#25352e}.tab{display:flex;align-items:center;gap:9px;max-width:220px;min-width:125px;padding:11px 14px;border:0;border-radius:11px 11px 0 0;background:transparent;color:#506157;cursor:pointer;text-align:left}.tab[aria-selected="true"]{background:#fffefa;color:#17392e}.tab__leaf{display:grid;width:18px;height:18px;place-items:center;border-radius:50%;background:#d5ee78;color:#17392e;font-size:11px}.window-controls{display:flex;gap:8px;margin:0 8px 10px auto}.window-controls i{width:11px;height:11px;border:1px solid rgba(23,57,46,.2);border-radius:50%;background:#d4d8d3}.toolbar{display:flex;align-items:center;gap:13px;min-height:58px;padding:0 18px;border-top:1px solid #dfe2dc;background:#fffefa;color:#274437}.toolbar__actions{display:flex;align-items:center;gap:16px;color:#607267}.toolbar__icon{display:grid;width:22px;height:22px;place-items:center;font-size:18px}.address{display:flex;align-items:center;gap:10px;flex:1;min-width:0;height:38px;padding:0 14px;border:1px solid #e3e7e0;border-radius:999px;background:#f4f6f1;color:#496052}.address__lock{color:#557b4a}.address__text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.toolbar__menu{font-size:20px;letter-spacing:2px}
+		.viewport{position:relative;max-height:min(72vh,900px);min-height:340px;overflow:auto;background:#f8f7f1}.viewport img{display:block;width:100%;height:auto}.viewport__badge{position:sticky;z-index:2;top:14px;float:right;margin:14px 14px -42px 0;padding:7px 11px;border:1px solid rgba(23,57,46,.12);border-radius:99px;background:rgba(255,254,250,.92);color:#31533e;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;backdrop-filter:blur(8px)}.caption{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 22px;background:#fffefa;color:#52655a}.caption strong{color:#17392e}.static-note{max-width:1320px;margin:17px auto 0;padding:12px 16px;border:1px solid var(--line);border-radius:10px;color:#d5ded7;font-size:.85rem}.footer{display:flex;justify-content:space-between;gap:20px;max-width:1320px;margin:28px auto 0;color:#b8c6bc;font-size:.84rem}.footer a{color:#d5ee78;text-decoration-thickness:1px;text-underline-offset:3px}
+		button:focus-visible,a:focus-visible{outline:3px solid #d5ee78;outline-offset:3px}.tab:hover:not([aria-selected="true"]){background:rgba(255,255,255,.45)}
+		@media(max-width:760px){.wrap{width:min(100% - 20px,1440px);padding-top:24px}.intro{align-items:flex-start;flex-direction:column}.intro__links{width:100%}.browser__tabs{min-height:47px;padding-left:7px}.tab{min-width:0;flex:1;justify-content:center;padding:10px 6px;font-size:.78rem}.tab__leaf{display:none}.window-controls{display:none}.toolbar{min-height:52px;padding:0 10px;gap:9px}.toolbar__actions{gap:10px}.address{height:34px;padding:0 10px;font-size:.78rem}.viewport{min-height:240px;max-height:65vh}.caption,.footer{align-items:flex-start;flex-direction:column}.caption{gap:5px;padding:12px 15px}.static-note{font-size:.78rem}.footer{gap:10px}}
+		@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+	</style>
+</head>
+<body>
+	<main class="wrap">
+		<header class="intro">
+			<div>
+				<p class="kicker">WordPress theme · visual preview</p>
+				<h1>Loopkind</h1>
+				<p>An editorial storefront concept for refill shops, reusable packaging and everyday goods.</p>
+			</div>
+			<nav class="intro__links" aria-label="Supporting links">
+				<a href="Documentation.html">Read the theme documentation <span aria-hidden="true">↗</span></a>
+			</nav>
+		</header>
+
+		<section class="browser" aria-label="Browser-style visual preview">
+			<div class="browser__tabs" role="tablist" aria-label="Preview pages">
+				<button class="tab" type="button" role="tab" id="tab-home" aria-controls="preview-panel" aria-selected="true" data-index="0"><span class="tab__leaf" aria-hidden="true">⌁</span> Home</button>
+				<button class="tab" type="button" role="tab" id="tab-story" aria-controls="preview-panel" aria-selected="false" data-index="1" tabindex="-1"><span class="tab__leaf" aria-hidden="true">⌁</span> Our Story</button>
+				<button class="tab" type="button" role="tab" id="tab-steps" aria-controls="preview-panel" aria-selected="false" data-index="2" tabindex="-1"><span class="tab__leaf" aria-hidden="true">⌁</span> How It Works</button>
+				<button class="tab" type="button" role="tab" id="tab-faq" aria-controls="preview-panel" aria-selected="false" data-index="3" tabindex="-1"><span class="tab__leaf" aria-hidden="true">⌁</span> FAQ</button>
+				<button class="tab" type="button" role="tab" id="tab-collection" aria-controls="preview-panel" aria-selected="false" data-index="4" tabindex="-1"><span class="tab__leaf" aria-hidden="true">⌁</span> Collection</button>
+				<button class="tab" type="button" role="tab" id="tab-shop" aria-controls="preview-panel" aria-selected="false" data-index="5" tabindex="-1"><span class="tab__leaf" aria-hidden="true">⌁</span> Product</button>
+				<div class="window-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+			</div>
+			<div class="toolbar" aria-hidden="true">
+				<div class="toolbar__actions"><span class="toolbar__icon">‹</span><span class="toolbar__icon">›</span><span class="toolbar__icon">⟳</span></div>
+				<div class="address"><span class="address__lock">●</span><span class="address__text" id="address-text">Static visual preview · Home</span></div>
+				<span class="toolbar__icon toolbar__menu">···</span>
+			</div>
+			<figure style="margin:0">
+				<div class="viewport" role="tabpanel" id="preview-panel" aria-labelledby="tab-home" tabindex="0"><span class="viewport__badge">Static preview</span><img id="preview-image" src="assets/home-preview.jpg" alt="Loopkind WordPress theme home page screenshot"></div>
+				<figcaption class="caption"><strong id="preview-title">Home — Refill your everyday</strong><span>Choose a tab above to view another page.</span></figcaption>
+			</figure>
+		</section>
+
+		<p class="static-note"><strong>Preview limitation:</strong> this GitHub Pages site is a static gallery of screenshots. It does not run WordPress, PHP, WooCommerce, checkout or cart interactions. Use a separate PHP-hosted WordPress installation for a functional live demo.</p>
+		<footer class="footer"><span>Loopkind · WordPress theme preview</span><span>Built with local screenshots and assets · No external scripts or fonts</span></footer>
+	</main>
+	<script>
+		(function () {
+			'use strict';
+			var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+			var image = document.getElementById('preview-image');
+			var title = document.getElementById('preview-title');
+			var address = document.getElementById('address-text');
+			var panel = document.getElementById('preview-panel');
+			var slides = [
+				{ image: 'assets/home-preview.jpg', alt: 'Loopkind home page screenshot', title: 'Home — Refill your everyday', address: 'Static visual preview · Home' },
+				{ image: 'assets/story-preview.jpg', alt: 'Loopkind brand story page screenshot', title: 'Our Story — A little more care', address: 'Static visual preview · Our Story' },
+					{ image: 'assets/steps-preview.jpg', alt: 'Loopkind refill steps page screenshot', title: 'How It Works — A clear return journey', address: 'Static visual preview · How It Works' },
+					{ image: 'assets/faq-preview.jpg', alt: 'Loopkind frequently asked questions page screenshot', title: 'FAQs — Helpful answers for your next refill', address: 'Static visual preview · FAQs' },
+					{ image: 'assets/collection-preview.jpg', alt: 'Loopkind WooCommerce product collection screenshot', title: 'Collection — Live WooCommerce products', address: 'Static visual preview · Collection' },
+					{ image: 'assets/product-preview.jpg', alt: 'Loopkind WooCommerce product page screenshot', title: 'Product — WooCommerce styling', address: 'Static visual preview · Product' }
+			];
+			function activate(index, focusTab) {
+				var slide = slides[index];
+				tabs.forEach(function (tab, tabIndex) {
+					var selected = tabIndex === index;
+					tab.setAttribute('aria-selected', selected ? 'true' : 'false');
+					tab.tabIndex = selected ? 0 : -1;
+				});
+				image.src = slide.image;
+				image.alt = slide.alt;
+				title.textContent = slide.title;
+				address.textContent = slide.address;
+				panel.setAttribute('aria-labelledby', tabs[index].id);
+				if (focusTab) { tabs[index].focus(); }
+			}
+			tabs.forEach(function (tab) {
+				tab.addEventListener('click', function () { activate(Number(tab.dataset.index), false); });
+				tab.addEventListener('keydown', function (event) {
+					var index = Number(tab.dataset.index);
+					if (event.key === 'ArrowRight' || event.key === 'ArrowDown') { event.preventDefault(); activate((index + 1) % tabs.length, true); }
+					if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') { event.preventDefault(); activate((index + tabs.length - 1) % tabs.length, true); }
+					if (event.key === 'Home') { event.preventDefault(); activate(0, true); }
+					if (event.key === 'End') { event.preventDefault(); activate(tabs.length - 1, true); }
+				});
+			});
+		}());
+	</script>
+</body>
+</html>

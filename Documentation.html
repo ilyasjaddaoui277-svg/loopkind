@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Loopkind — Theme Documentation</title>
+	<style>
+		:root{color-scheme:light;--ink:#17392e;--paper:#f8f7f1;--sage:#dce8d7;--line:#d9dfd5;--muted:#586b60}
+		*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}
+		main{width:min(900px,calc(100% - 36px));margin:48px auto 80px}.brand{display:inline-block;padding:5px 12px;border-radius:99px;background:var(--sage);font-size:.8rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase}
+		h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.04em;line-height:1.1}h1{font-size:clamp(2.6rem,7vw,4.8rem);margin:.7rem 0}h2{margin-top:2.2rem;font-size:2rem}p,li{color:#334d40}a{color:#315c46}code{padding:.12rem .35rem;border-radius:4px;background:#e8eee4}section{padding-bottom:1rem;border-bottom:1px solid var(--line)}.note{padding:16px 18px;border-left:3px solid #8da95c;background:#edf2e8}.meta{color:var(--muted);font-size:.93rem}
+	</style>
+</head>
+<body>
+<main>
+	<span class="brand">Loopkind · WordPress Theme</span>
+	<h1>Theme documentation</h1>
+	<p class="meta">A practical guide to installing and configuring the Loopkind refill and reuse storefront theme.</p>
+
+	<section id="requirements">
+		<h2>1. Requirements</h2>
+		<ul>
+			<li>WordPress 6.6 or later.</li>
+			<li>PHP 7.4 or later. A currently supported PHP release is recommended by your hosting provider.</li>
+			<li>WooCommerce is optional. Install a current supported release if you need product, cart, checkout and account functionality.</li>
+		</ul>
+		<p>The theme does not bundle WooCommerce or other third-party plugins. Store functions, payment methods, tax, shipping and legal notices are configured through WooCommerce and your own service providers.</p>
+	</section>
+
+	<section id="installation">
+		<h2>2. Install the theme</h2>
+		<ol>
+			<li>Sign in to your WordPress dashboard.</li>
+			<li>Open <strong>Appearance → Themes → Add New → Upload Theme</strong>.</li>
+			<li>Select the installable <code>loopkind.zip</code> file, choose <strong>Install Now</strong>, then activate Loopkind.</li>
+			<li>Open <strong>Appearance → Themes</strong> and confirm Loopkind is active.</li>
+		</ol>
+		<p>If WordPress reports that the theme is missing a stylesheet, you selected the outer Main Files archive instead of the installable WordPress theme ZIP.</p>
+	</section>
+
+	<section id="homepage">
+		<h2>3. Build the home page</h2>
+		<ol>
+			<li>For an online store, install and activate WooCommerce first. Its Product Collection block powers the live product grid in the home pattern.</li>
+			<li>Create a new page called Home and open it in the WordPress block editor.</li>
+			<li>Open the block inserter, choose <strong>Patterns → Loopkind</strong>, and insert <strong>Loopkind — Refill shop home</strong>.</li>
+			<li>Edit the text, links and category cards to match your shop, then assign the page under <strong>Settings → Reading</strong>.</li>
+		</ol>
+		<p>The product section automatically queries published, in-stock products from WooCommerce. If no products appear, confirm WooCommerce is active and at least one product is published and in stock. The category cards above the grid are editable editorial content; link them to your real product categories.</p>
+		<p>Other patterns include a brand story, refill steps, FAQs and a refill product information guide. Patterns use WordPress core blocks and remain editable in the block editor.</p>
+		<p class="note"><strong>Important:</strong> Pattern copy is starter content. Confirm every product detail, size, container option, return condition, address, delivery region and environmental statement before publishing.</p>
+	</section>
+
+	<section id="identity">
+		<h2>4. Site identity, navigation and styling</h2>
+		<ul>
+			<li>Set the site title and tagline in <strong>Settings → General</strong>.</li>
+			<li>Upload a logo in <strong>Appearance → Customize → Site Identity</strong> or the equivalent Site Identity controls provided by your WordPress installation.</li>
+			<li>Create and assign a primary menu under <strong>Appearance → Menus</strong>. Assign a separate footer menu if needed; the footer navigation area stays hidden until one is assigned.</li>
+			<li>Set your site icon using WordPress Site Identity settings.</li>
+			<li>Use the Site Editor's global Styles controls to adjust the theme palette, custom colors and font sizes.</li>
+		</ul>
+		<p>The mobile navigation remains visible if JavaScript is disabled; with JavaScript enabled it can be opened by keyboard or touch and closed with Escape. The theme uses system fonts and local assets and does not request web fonts or analytics from third-party servers.</p>
+	</section>
+
+	<section id="woocommerce">
+		<h2>5. WooCommerce</h2>
+		<ol>
+			<li>Install and activate the official WooCommerce plugin.</li>
+			<li>Complete WooCommerce setup and confirm its Shop, Cart, Checkout and My Account pages.</li>
+			<li>Add your products, product images, prices, stock details, shipping and tax settings.</li>
+			<li>Open the Shop page and check product archives, a single product, the cart, checkout and My Account on desktop and mobile.</li>
+		</ol>
+		<p>Loopkind provides theme support, presentation styling, a cart link with a live item count refreshed from the WooCommerce Store API, an optional My Account link, and a dynamic product collection pattern. It does not replace WooCommerce templates or remove their hooks. Payment and checkout availability depend on your WooCommerce configuration and extensions.</p>
+		<p>For refill products, insert <strong>Refill product — useful details</strong> into the product description and edit the container and return guidance to match the actual item. This pattern is informational only; it does not calculate deposits, manage packaging returns or change checkout behavior.</p>
+	</section>
+
+	<section id="blog">
+		<h2>6. Blog, comments and widgets</h2>
+		<p>The standard <code>index.php</code> template displays the latest posts. Category, tag, date archive, search and single-post templates are included. Add widgets to <strong>Appearance → Widgets</strong> to show the optional Blog Sidebar. The sidebar is hidden from visitors when it contains no widgets.</p>
+		<p>Comments follow WordPress discussion settings. You can enable, moderate or close comments in the dashboard.</p>
+	</section>
+
+	<section id="accessibility">
+		<h2>7. Accessibility and languages</h2>
+		<p>The theme includes a skip link, visible keyboard focus, semantic landmarks, reduced-motion support and responsive navigation. Content and labels use the <code>loopkind</code> text domain and can be translated. A <code>loopkind.pot</code> translation template is included in the <code>languages</code> folder.</p>
+	</section>
+
+	<section id="assets">
+		<h2>8. Included assets and credits</h2>
+		<p>Theme illustrations are original SVG files included in the theme package. The front end uses system fonts and local assets. No commercial stock photo, paid font, external JavaScript library or remote image service is bundled.</p>
+		<p>Product imagery visible in preview screenshots is illustrative and is not included as a WooCommerce product catalog. Add your own licensed product images before publishing.</p>
+	</section>
+
+	<section id="troubleshooting">
+		<h2>9. Troubleshooting</h2>
+		<ul>
+			<li><strong>Layout looks unchanged:</strong> clear your browser, page-cache and CDN caches, then reload the site.</li>
+			<li><strong>Home page still shows posts:</strong> assign the Home page under <strong>Settings → Reading</strong>.</li>
+			<li><strong>Menu is missing:</strong> create a menu and assign it to the Primary Menu location.</li>
+			<li><strong>Home product grid is empty:</strong> activate WooCommerce and check that products are published and in stock.</li>
+			<li><strong>Shop pages are missing:</strong> install WooCommerce and complete its setup. The theme alone does not create store pages or products.</li>
+			<li><strong>Image does not load:</strong> verify the image is attached to the page or product and that the media URL is available over HTTPS.</li>
+		</ul>
+	</section>
+
+	<footer><p class="meta">Loopkind is a WordPress theme. WordPress and WooCommerce are separate software products. Plugin names and services remain the property of their respective owners.</p></footer>
+</main>
+</body>
+</html>

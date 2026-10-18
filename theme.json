@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": { "contentSize": "780px", "wideSize": "1160px" },
+    "color": {
+      "palette": [
+        { "slug": "forest", "color": "#17392e", "name": "Forest" },
+        { "slug": "leaf", "color": "#6d8c56", "name": "Leaf" },
+        { "slug": "lime", "color": "#d5ee78", "name": "Lime" },
+        { "slug": "sage", "color": "#dce8d7", "name": "Sage" },
+        { "slug": "paper", "color": "#f8f7f1", "name": "Paper" },
+        { "slug": "white", "color": "#fffefa", "name": "Soft White" },
+        { "slug": "clay", "color": "#d98b68", "name": "Clay" }
+      ],
+      "defaultPalette": false,
+      "defaultGradients": false
+    },
+    "typography": {
+      "fluid": true,
+      "fontFamilies": [
+        { "fontFamily": "Georgia, 'Times New Roman', serif", "slug": "editorial-serif", "name": "Editorial Serif" },
+        { "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif", "slug": "clean-sans", "name": "Clean Sans" }
+      ],
+      "fontSizes": [
+        { "slug": "small", "size": "0.875rem", "name": "Small" },
+        { "slug": "medium", "size": "1rem", "name": "Medium" },
+        { "slug": "large", "size": "1.5rem", "name": "Large" },
+        { "slug": "x-large", "size": "clamp(2rem, 4vw, 3.5rem)", "name": "Extra Large" }
+      ]
+    },
+    "spacing": {
+      "units": ["px", "em", "rem", "%", "vw"],
+      "spacingSizes": [
+        { "slug": "20", "size": "0.5rem", "name": "XS" },
+        { "slug": "30", "size": "1rem", "name": "S" },
+        { "slug": "40", "size": "1.5rem", "name": "M" },
+        { "slug": "50", "size": "2rem", "name": "L" },
+        { "slug": "60", "size": "3rem", "name": "XL" },
+        { "slug": "70", "size": "5rem", "name": "2XL" }
+      ]
+    }
+  },
+  "styles": {
+    "color": { "text": "#17392e", "background": "#f8f7f1" },
+    "typography": { "fontFamily": "var:preset|font-family|clean-sans", "lineHeight": "1.65" },
+    "elements": {
+      "heading": { "typography": { "fontFamily": "var:preset|font-family|editorial-serif", "fontWeight": "500", "lineHeight": "1.1" } },
+      "button": { "border": { "radius": "999px" }, "color": { "text": "#fffefa", "background": "#17392e" }, "typography": { "fontWeight": "650" } },
+      "link": { "color": { "text": "#17392e" } }
+    },
+    "blocks": {
+      "core/button": { "border": { "radius": "999px" } },
+      "core/quote": { "border": { "left": { "color": "#afc6aa", "style": "solid", "width": "3px" } } }
+    }
+  }
+}
